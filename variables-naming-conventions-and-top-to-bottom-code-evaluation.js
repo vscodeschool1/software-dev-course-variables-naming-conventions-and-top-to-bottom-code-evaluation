@@ -24,9 +24,13 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+const customerName = "Alice";
+const storeName = "Tech Store";
+let itemCount = 4; // number of items purchased
+let itemPrice = 5; // price per item
+let totalCost = itemCount * itemPrice; // calculate total cost
+let purchaseMessage = `${customerName} bought ${itemCount} items for $${totalCost}.`;
+let receipt = [storeName, totalCost, customerName]; // create a receipt object with the store name and total cost
 
-console.log(d);
+console.log(purchaseMessage);
+console.log(receipt); 
